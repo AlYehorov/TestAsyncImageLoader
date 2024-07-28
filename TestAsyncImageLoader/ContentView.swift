@@ -28,6 +28,7 @@ struct ContentView: View {
                 if let url = URL(string: "\(item.imageUrl)?size=200") {
                     AsyncImageView(url: url, placeholder: UIImage(systemName: "photo") ?? UIImage())
                         .clipShape(RoundedRectangle(cornerRadius: 16.0, style: .circular))
+                    Text("\(item.id)")
                 } else {
                     Image(systemName: "exclamationmark.triangle")
                         .resizable()
