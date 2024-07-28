@@ -11,6 +11,7 @@
 		46768FA32C56772500BAC9BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768FA22C56772500BAC9BE /* ContentView.swift */; };
 		46768FA52C56772900BAC9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46768FA42C56772900BAC9BE /* Assets.xcassets */; };
 		46768FA82C56772900BAC9BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46768FA72C56772900BAC9BE /* Preview Assets.xcassets */; };
+		46768FB02C56774E00BAC9BE /* AsyncImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = 46768FAF2C56774E00BAC9BE /* AsyncImageLoader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46768FB02C56774E00BAC9BE /* AsyncImageLoader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestAsyncImageLoader;
+			packageProductDependencies = (
+				46768FAF2C56774E00BAC9BE /* AsyncImageLoader */,
+			);
 			productName = TestAsyncImageLoader;
 			productReference = 46768F9D2C56772500BAC9BE /* TestAsyncImageLoader.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 46768F942C56772500BAC9BE;
+			packageReferences = (
+				46768FAE2C56774E00BAC9BE /* XCRemoteSwiftPackageReference "AsyncImageLoader" */,
+			);
 			productRefGroup = 46768F9E2C56772500BAC9BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46768FAE2C56774E00BAC9BE /* XCRemoteSwiftPackageReference "AsyncImageLoader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlYehorov/AsyncImageLoader.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46768FAF2C56774E00BAC9BE /* AsyncImageLoader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46768FAE2C56774E00BAC9BE /* XCRemoteSwiftPackageReference "AsyncImageLoader" */;
+			productName = AsyncImageLoader;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46768F952C56772500BAC9BE /* Project object */;
 }
