@@ -1,0 +1,15 @@
+{
+  "originHash" : "11ba007dbf2dd316bb1573bea194b853957bbcaf38e78ddc7d3803148d97e02c",
+  "pins" : [
+    {
+      "identity" : "asyncimageloader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlYehorov/AsyncImageLoader.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c7571418b3c1a4fad4dd7ef2b8a978a17e6464a7"
+      }
+    }
+  ],
+  "version" : 3
+}
